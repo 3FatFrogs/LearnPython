@@ -24,6 +24,7 @@
     <Compile Include="First.py" />
     <Compile Include="Functions.py" />
     <Compile Include="LearnPython.py" />
+    <Compile Include="MyFirstClass.py" />
     <Compile Include="PythonTuple.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
