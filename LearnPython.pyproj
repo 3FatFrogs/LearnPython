@@ -21,6 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="First.py" />
+    <Compile Include="Functions.py" />
     <Compile Include="LearnPython.py" />
     <Compile Include="PythonTuple.py" />
   </ItemGroup>

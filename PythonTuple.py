@@ -20,11 +20,9 @@ print("\n=== tuple with mixed datatypes ========================================
 my_tuple = (1, "Hello", 3.4)
 print(my_tuple)
 
-
 print("\n=== nested tuple ===================================================================")
 my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 print(my_tuple)
-
 
 print("\n=== tuple unpacking is also possible ===============================================")
 a,b,c = my_tuple
@@ -40,7 +38,6 @@ print(n_tuple[0][3])
 print(n_tuple[1]) 
 print(n_tuple[-1]) 
 print(n_tuple[-2]) 
-
 
 print("\n=== Slicing ========================================================================")
 #We can access a range of items in a tuple by using the slicing operator - colon ":".
