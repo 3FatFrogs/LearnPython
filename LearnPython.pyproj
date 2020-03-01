@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ade0fe16-7011-443b-ba8a-a67e6254f596</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PythonTuple.py</StartupFile>
+    <StartupFile>PythonSets.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,12 @@
     <Compile Include="Functions.py" />
     <Compile Include="LearnPython.py" />
     <Compile Include="MyFirstClass.py" />
+    <Compile Include="PythonList.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PythonSets.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PythonTuple.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
