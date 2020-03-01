@@ -18,15 +18,15 @@ print(my_tuple, type(my_tuple))
 print(my_list, type(my_list))
 
 
-print("\n=== Tuple having integers ===========================================================")
+print("\n=== Tuple having integers ==========================================")
 my_tuple = (1, 2, 3)
 print(my_tuple)
 
-print("\n=== tuple with mixed datatypes ======================================================")
+print("\n=== tuple with mixed datatypes =====================================")
 my_tuple = (1, "Hello", 3.4)
 print(my_tuple)
 
-print("\n=== nested tuple ===================================================================")
+print("\n=== nested tuple ===================================================")
 my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 print(my_tuple)
 
