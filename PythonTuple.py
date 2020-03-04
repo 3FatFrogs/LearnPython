@@ -30,13 +30,13 @@ print("\n=== nested tuple ===================================================")
 my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 print(my_tuple)
 
-print("\n=== tuple unpacking is also possible ===============================================")
+print("\n=== tuple unpacking is also possible ===============================")
 a,b,c = my_tuple
 print(a, type(a))
 print(b, type(b))
 print(c, type(c))
 
-print("\n=== Access Tuple Elements ==========================================================")
+print("\n=== Access Tuple Elements ==========================================")
 n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 #n_list = ["mouse", [8, 4, 6], (1, 2, 3)]
 print(n_tuple[0]) 
@@ -45,7 +45,7 @@ print(n_tuple[1])
 print(n_tuple[-1]) 
 print(n_tuple[-2]) 
 
-print("\n=== Slicing ========================================================================")
+print("\n=== Slicing ========================================================")
 #We can access a range of items in a tuple by using the slicing operator - colon ":".
 n_tuple = (1,2,3,4,5,6,7,8,9)
 print(n_tuple) 
@@ -59,7 +59,7 @@ print("n_tuple[-4:-1] = ", n_tuple[-4:-1])
 x = n_tuple[0:4]
 print(x)
 
-print("\n=== Changing a Tuple ================================================================")
+print("\n=== Changing a Tuple ===============================================")
 n_tuple = ("mouse", [8, 4, 6], (1, 2, 3),5)
 
 print(n_tuple[3])
@@ -71,7 +71,7 @@ print(n_tuple[1])
 n_tuple[1][0] = [1,2,3,4]
 print(n_tuple) 
 
-print("\n=== concatenation ====================================================================")
+print("\n=== concatenation ==================================================")
 a_tuple = (1,2,3)
 b_tuple = (1,2,3)
 c_tuple = a_tuple + b_tuple
@@ -79,7 +79,7 @@ print(c_tuple, type(c_tuple))
 
 
 
-print("\n=== Tuple Methods ====================================================================")
+print("\n=== Tuple Methods ==================================================")
 n_tuple = ("mouse", [8, 4, 6], (1, 2, 3),3,4,5,6,7,7,7)
 print(n_tuple.count([8,4,6]))  #Returns the number of items
 
