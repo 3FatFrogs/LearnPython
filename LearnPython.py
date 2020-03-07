@@ -6,7 +6,7 @@ print("Hello")
 
 
 
-#=== BinaryGap ======================== 
+#=== BinaryGap ================================================================
 def fun(N):
     if N<2:
         return 0
@@ -24,19 +24,16 @@ def fun(N):
             
     return result 
 
-    
-    
+                                                          
 
-
-
-
-#=== Remove duplicate from a list ======================== 
+#=== Remove duplicate from a list ============================================= 
 def remove_duplicate(my_list):    
     for x in my_list:
         if my_list.count(x) > 1:
             my_list.remove(x)
 
 
+#=== Remove non duplicate from a list ========================================= 
 def remove_non_duplicate(my_list):
     for x in range(len(my_list)):
         if my_list.count(x) == 1:
@@ -44,20 +41,21 @@ def remove_non_duplicate(my_list):
 
 
 
-a = [1,2,3,4,5,6,3,0]
-a.sort()
-b = a.copy()
-
-
-
-print("=======")
-print(id(a), a)
-print(id(b), b)
-
-remove_duplicate(a)
-remove_non_duplicate(b)
-
-print(id(a), a)
-print(id(b), b)
-
-
+#== CyclicRotation ============================================================
+def CyclicRotation(A, K):
+        
+    if len(A) < 2:
+        return A
+    
+    #check if all elements are the same
+    if len(A) == A.count(A[0]):
+        return A
+    
+    
+    for i in range(K%len(A)):
+        last = A[len(A)-1]
+        for j in range(len(A)-1, 0, -1):
+            A[j] = A[j-1]
+        A[0] = last
+    return A
+        
