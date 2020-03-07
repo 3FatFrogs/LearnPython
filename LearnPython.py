@@ -59,3 +59,13 @@ def CyclicRotation(A, K):
         A[0] = last
     return A
         
+
+
+#=== OddOccurrencesInArray ====================================================
+def OddOccurrencesInArray(A):
+    r = 0
+    for x in A:
+        r ^= x
+    return r
+
+
