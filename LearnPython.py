@@ -1,5 +1,10 @@
+for x in range(100):
+    print()
 
 print("Hello")
+
+
+
 
 #=== BinaryGap ======================== 
 def fun(N):
@@ -25,22 +30,34 @@ def fun(N):
 
 
 
-for x in range(-5,15):
-   print(x%4) 
+#=== Remove duplicate from a list ======================== 
+def remove_duplicate(my_list):    
+    for x in my_list:
+        if my_list.count(x) > 1:
+            my_list.remove(x)
 
 
-def solution(A, K):
-    #number of movements
+def remove_non_duplicate(my_list):
+    for x in range(len(my_list)):
+        if my_list.count(x) == 1:
+            my_list.remove(x)
 
-    n = len(A)
-    
-    if(n<1)
-        return A
-    
-    for i in range(0,K%len(A)):
-        t = A[n-1]
-        for x in range(n-1,-1,-1):
-            A[x] = A[x-1]
-        A[0] = t
 
-print(solution(([3, 8, 9, 7, 6], 3)))
+
+a = [1,2,3,4,5,6,3,0]
+a.sort()
+b = a.copy()
+
+
+
+print("=======")
+print(id(a), a)
+print(id(b), b)
+
+remove_duplicate(a)
+remove_non_duplicate(b)
+
+print(id(a), a)
+print(id(b), b)
+
+
