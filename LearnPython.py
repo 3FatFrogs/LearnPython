@@ -148,7 +148,7 @@ def MissingInteger(A):
 
 
 #=== Small frog cross the river ================================================
-def FrogJump(X,A):
+def FrogRiverOne(X,A):
         
     if len(A) < X:
         return -1
@@ -199,70 +199,3 @@ def MaxCounter(N,A):
         temp[x] = max(max_value, temp[x])
         
     return temp
-
-
-
-
-
-
-
-
-
-def solution(N, A):
-
-    M = len(A)
-    counters = [0] * N
-
-    max_result = max_counter = 0
-    for ind in range(M):
-        if A[ind] == N + 1:
-            max_result = max(max_result, max_counter)
-        else:
-            counters[A[ind] - 1] = max(counters[A[ind] - 1],max_result) +1
-            max_counter = max(max_counter, counters[A[ind] - 1])
-
-    for ind in range(N):
-        counters[ind] = max(max_result, counters[ind])
-
-    return counters
-
-
-
-def pippo(N, A):
-    temp = [0] * N #list of zeros
-    temp_max = 0
-    N1 = N + 1
-    for x in A:
-        if x == N1:
-            temp = [temp_max] * N
-        else:
-            temp[x-1] +=1
-            temp_max = max(temp_max,temp[x-1] )
-
-    return temp
-
-A = [9, 5, 7, 3, 2, 7, 3, 1, 10, 8]
-
-
-print("================================")
-A = [3,4,4,6,1,4,4]
-print(MaxCounter(5,A))
-
-
-print("================================")
-A = [3,4,4,6,1,4,4]
-print(solution(5,A))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
