@@ -125,3 +125,27 @@ def MinimialDiff(A):
     return min_value
 
 
+
+#=== Find missing integer =====================================================
+
+def MissingInteger(A):    
+    
+    #remove all negeative    
+    A = list(filter(lambda x : x>0, A ))
+    
+    if len(A) < 1:
+        return -1
+    
+    
+    #remove duplicates
+    A = list(dict.fromkeys(A))
+    
+    A.sort()
+    
+    for k in range(len(A)):
+        if A[k] != k+1:
+            return (k+1)
+    
+    return A[len(A)-1]+1
+
+
