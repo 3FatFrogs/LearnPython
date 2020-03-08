@@ -3,8 +3,6 @@ import math
 for x in range(100):
     print()
 
-print("Hello")
-
 
 
 
@@ -89,6 +87,24 @@ def PermMissingElem(A):
 
 
 
+#=== Remove negative from list ================================================
+def remove_negative1(A):
+    B = A.copy()
+    for x in B:
+        if x<0:
+            A.remove(x)
+
+def remove_negative2(A):
+    B = A.copy()
+    for x in B:
+        if x<0:
+            A.remove(x)
+
+   
+    
+my_list = range(-10,11)
+my_list = list(filter(lambda x: x >= 0, my_list))
+print(my_list)
 
 #=== Find minimila difference==================================================
 def MinimialDiff(A):
@@ -107,63 +123,5 @@ def MinimialDiff(A):
         min_value = min(min_value,temp)
         
     return min_value
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
