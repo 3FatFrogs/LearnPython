@@ -85,7 +85,85 @@ def PermMissingElem(A):
     for x in A:
         partial_sum += x
     n = len(A)+1
-    return (int)(0.5*n*(n+1))-partial_sum    
+    return (int)(0.5*n*(n+1))-partial_sum
+
+
+
+
+#=== Find minimila difference==================================================
+def MinimialDiff(A):
+    
+    if len(A) == 2:
+        return abs(A[0]-A[1])
+    
+    tot_sum = sum(A)
+    min_value = float('inf')
+    left_sum = 0
+    for x in range(0,len(A)-1):
+        if A[x] == 0:
+            continue
+        left_sum += A[x]
+        temp = abs(2*left_sum-tot_sum)
+        min_value = min(min_value,temp)
+        
+    return min_value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
