@@ -124,7 +124,6 @@ def MinimialDiff(A):
     return min_value
 
 
-
 #=== Find missing integer =====================================================
 def MissingInteger(A):    
     
@@ -148,7 +147,7 @@ def MissingInteger(A):
 
 
 
-#=== Smal frog cross the river ================================================
+#=== Small frog cross the river ================================================
 def FrogJump(X,A):
         
     if len(A) < X:
@@ -167,67 +166,14 @@ def FrogJump(X,A):
     return -1
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#=== Check whether array A is a permutation ===================================
+def PermCheck(A):
+    if max(A) == len(A):
+        #remove duplicate
+        A = list(dict.fromkeys(A))
+        if max(A) == len(A):
+            return 1
+    return 0
+
+
+A = [9, 5, 7, 3, 2, 7, 3, 1, 10, 8]
