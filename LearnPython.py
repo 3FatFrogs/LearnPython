@@ -134,8 +134,7 @@ def MissingInteger(A):
     A = list(filter(lambda x : x>0, A ))
     
     if len(A) < 1:
-        return -1
-    
+        return 1    
     
     #remove duplicates
     A = list(dict.fromkeys(A))
