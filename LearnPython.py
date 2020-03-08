@@ -104,7 +104,6 @@ def remove_negative2(A):
     
 my_list = range(-10,11)
 my_list = list(filter(lambda x: x >= 0, my_list))
-print(my_list)
 
 #=== Find minimila difference==================================================
 def MinimialDiff(A):
@@ -127,7 +126,6 @@ def MinimialDiff(A):
 
 
 #=== Find missing integer =====================================================
-
 def MissingInteger(A):    
     
     #remove all negeative    
@@ -146,5 +144,90 @@ def MissingInteger(A):
             return (k+1)
     
     return A[len(A)-1]+1
+
+
+
+
+#=== Smal frog cross the river ================================================
+def FrogJump(X,A):
+        
+    if len(A) < X:
+        return -1
+    
+    leaves = set()
+    
+    count = -1
+    
+    for x in A:
+        leaves.add(x)
+        count += 1
+        if len(leaves) == X:
+            return count
+    
+    return -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
