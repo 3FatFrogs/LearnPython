@@ -1,3 +1,5 @@
+import math
+
 for x in range(100):
     print()
 
@@ -67,5 +69,23 @@ def OddOccurrencesInArray(A):
     for x in A:
         r ^= x
     return r
+
+
+
+#=== FrogJmp ==================================================================
+
+
+
+
+
+
+#=== PermMissingElem ==========================================================
+def PermMissingElem(A):
+    partial_sum = 0
+    for x in A:
+        partial_sum += x
+    n = len(A)+1
+    return (int)(0.5*n*(n+1))-partial_sum    
+
 
 
