@@ -45,6 +45,7 @@ print(c_list)
 
 print("\n=== Create list ================================================================")
 a_list = [x**2 for x in range(10)]
-print(a_list)
+print(id(a_list), a_list)
 
-
+a_list = [x**1 for x in range(10)]
+print(id(a_list), a_list)
