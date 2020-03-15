@@ -1,4 +1,4 @@
-
+import math
 
 for x in range(100):
     print()
@@ -199,3 +199,37 @@ def MaxCounter(N,A):
         temp[x] = max(max_value, temp[x])
         
     return temp
+
+
+
+#=== Compute number of integers divisible by k in range [a..b]. ===============
+def compute_number_of_integer(A,B,K): 
+
+    return 1 + math.floor(B/K)- math.ceil(A/K)
+    
+
+
+   
+        
+#=== PassingCars ==============================================================
+def passing_cars()
+    result = 0
+    count_zeros = 0
+    for i in A:
+        if i == 0:
+            count_zeros += 1
+        else:
+            result += count_zeros
+    
+    
+    if result > 1000000000:
+        result = -1
+    
+    return result
+
+
+
+
+
+
+
