@@ -15,7 +15,7 @@ print(pippoList.sort())
 
 def pippo(*arguments):
     s1 = "==="
-    s2 = s1 + "==============================================="
+    s2 = s1 + "=============================================="
     
     if len(arguments)>0:
         temp = " " + arguments[0]  + " ";
